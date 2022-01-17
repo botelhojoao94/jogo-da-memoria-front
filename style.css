@@ -47,7 +47,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     backface-visibility: hidden;
     cursor:pointer
 }
@@ -86,13 +86,19 @@ h1{
 }
 
 #restart{
-    padding: 20px;
+    padding: 30px;
     font-size: 20px;
-    background-color: yellow;
+    background-image: linear-gradient(45deg, #5583EE, #41D8DD);
+    font-family: 'Righteous', sans-serif;
+    color:white;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
-    cursor:pointer
+    cursor:pointer;
+}
+
+#restart:hover{
+    background-image: linear-gradient(45deg, #346ae9, #21d5db);
 }
 /* ----------- Inicio do CSS para o tabuleiro ----------- */
 

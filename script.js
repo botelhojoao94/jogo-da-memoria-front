@@ -73,7 +73,7 @@ function initializeCards(cards) {
 function flipCard(cardSelected) {
     cardSelected.classList.add("flip")
     if (card1 == cardSelected || card2 == cardSelected) {
-        alert("Nao")
+        alert("Você não pode selecionar a mesma carta!")
     }
     if (countRound == 1) {
         card1 = cardSelected
