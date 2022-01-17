@@ -1,26 +1,3 @@
-html {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-body {
-    background-image: linear-gradient(45deg, #5583EE, #41D8DD);
-    font-family: 'Righteous', sans-serif;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    color: white;
-}
 
 #gameBoard{
     max-width: 700px;
@@ -30,10 +7,24 @@ h1{
 }
 
 /* ----------- Inicio do CSS para o card ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c7cdd3;
+}
 
 .card{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     position: relative;
     transform-style: preserve-3d ;
     transition: transform .5s;
@@ -46,7 +37,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
     backface-visibility: hidden;
     cursor:pointer
@@ -62,14 +53,9 @@ h1{
 }
 
 .card_back{
-    color: black;
-    background-color:white;
+    color: #101c2c;
+    background-color: #05c3ff;
     font-size: 30px;
-}
-
-.icon{
-    height: 80%;
-    width:  80%;
 }
 /* ----------- Inicio do CSS para a tela de restart ----------- */
 #gameOver{
@@ -95,15 +81,3 @@ h1{
     cursor:pointer
 }
 /* ----------- Inicio do CSS para o tabuleiro ----------- */
-
-
-@media (max-width: 540px) {
-    body{
-    background-color: red;
-    }
-
-    .card{
-        height: 19vw;
-        width: 19vw;
-    }
-}
